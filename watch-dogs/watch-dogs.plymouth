@@ -1,0 +1,7 @@
+[Plymouth Theme]
+Name=watch-dogs
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/watch-dogs
+ScriptFile=/usr/share/plymouth/themes/watch-dogs/watch-dogs.script

@@ -1,37 +1,32 @@
-# OS1
-[![Donate Paypal](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/Taheralkamel)
-[![Donate Bitcoin](https://img.shields.io/badge/btc-bc1qawj2lp8kxzf5n9hew7s72sq2l4e2q72643rgs0-%23F7931A)](https://taheralkamel.xyz/donate.html)
-
-A Plymouth theme inspired by OS1 from the movie Her that supports encrypted boot setups
+# watch-dogs-plymouth
+A Plymouth theme inspired by Watch Dogs.
+Forked from [OS1](https://github.com/t-gitt/OS1)
 
 # Preview
-https://user-images.githubusercontent.com/29256024/147393235-aba7618f-942d-49b5-91bd-7c50b2155483.mp4
-
+_Not yet avaible_
 
 # Installation
 
 ### Fedora
 ```bash
-git clone https://github.com/t-gitt/OS1.git
-cd OS1/
-sudo cp -r os1 /usr/share/plymouth/themes/
-sudo plymouth-set-default-theme os1 -R
+git clone https://github.com/Guaxinim5573/watch-dogs-plymouth.git
+cd watch-dogs-plymouth/
+sudo cp -r watch-dogs /usr/share/plymouth/themes/
+sudo plymouth-set-default-theme watch-dogs -R
 ```
 ### Debian
 ```bash
-git clone https://github.com/t-gitt/OS1.git
-cd OS1/
-sudo cp -r os1 /usr/share/plymouth/themes/
-sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/os1/os1.plymouth 100
+git clone https://github.com/Guaxinim5573/watch-dogs-plymouth.git
+cd watch-dogs-plymouth/
+sudo cp -r watch-dogs /usr/share/plymouth/themes/
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/watch-dogs/watch-dogs.plymouth 100
 sudo update-alternatives --config default.plymouth
 sudo update-initramfs -u
 ```
-> if you are using an unencrypted boot drive, replace this line ```:87```  in ```os1.script```
-```Plymouth.SetRefreshFunction (refresh_callback_with_password);```
-with
+> if you are using an encrypted boot drive, replace this line ```:89```  in ```watch-dogs.script```
 ``` Plymouth.SetRefreshFunction (refresh_callback); ```
-
+with
+```Plymouth.SetRefreshFunction (refresh_callback_with_password);```
 #### Animation Credit
-YouTube @That Martian
-
-[Her - Loading OS1 Video Animation](https://www.youtube.com/watch?v=WOeyLpgjQ5Y)
+Ubisoft
+[Youtube - WATCH DOGS Full boot animation - FiL0S0V](https://m.youtube.com/watch?v=lEpwxHhUJMg)
